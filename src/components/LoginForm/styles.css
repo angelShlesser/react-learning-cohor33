@@ -34,8 +34,6 @@ button.button_Login:hover {
 }
 
 .login-Form {
-    position: relative;
-    left: -10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
