@@ -6,7 +6,7 @@ export const login = {
   
   export const email = {
     nameType: "Email",
-    type: "text",
+    type: "email",
     placeholder: "Enter your email",
     label: "Email"
   };
