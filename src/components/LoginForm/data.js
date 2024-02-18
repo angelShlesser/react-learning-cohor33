@@ -8,13 +8,13 @@ export const login = {
     nameType: "Email",
     type: "text",
     placeholder: "Enter your email",
-    label: ""
+    label: "Email"
   };
   
   export const password = {
     nameType: "Password",
     type: "password",
     placeholder: "Enter your password",
-    label: ""
+    label: "Password"
   };
   
