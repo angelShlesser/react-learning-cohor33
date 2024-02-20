@@ -1,24 +1,30 @@
-import './styles.css';
+import "./styles.css";
 
-// LoginForm.jsx
-import React from 'react';
-import Input from '../../components/Input/Input';
-import Button from '../../components/Button/Button';
-import { login, email, password } from './data';
+import Button from "../Button/Button";
+import Input from "../Input/Input";
 
 function LoginForm() {
-    console.log({login})
-    console.log({email})
-    console.log({password})
   return (
-    <div className="login-panel">
-      <form action="" className='login-Form'>
-        <h2>Login form</h2>
-        <Input {...email} />
-        <Input {...password} />
-        <Button {...login} />
-      </form>
-    </div>
+    <form className="loginform-wrapper">
+      <p className="loginform-name">Login form</p>
+      <div className="inputs-container">
+        <Input
+          id="login-email"
+          placeholder="Enter your email"
+          name="email"
+          label="Email"
+          type="email"
+        />
+        <Input
+          id="login-password"
+          placeholder="Enter your password"
+          name="password"
+          label="Password"
+          type="password"
+        />
+      </div>
+      <Button name="Login" />
+    </form>
   );
 }
 

@@ -1,9 +1,9 @@
-// Button.jsx
+import './styles.css'
 
-function Button({ loginButtonType, loginButtonName }) {
+function Button({ name, type = "button", onClick = () => {} }) {
   return (
-    <button type={loginButtonType} className="button_Login">
-      {loginButtonName}
+    <button className="button-component" onClick={onClick} type={type}>
+      {name}
     </button>
   );
 }

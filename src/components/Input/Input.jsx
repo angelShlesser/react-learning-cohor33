@@ -1,29 +1,18 @@
-// components/Input/Input.jsx
-import './Input.css'
+import "./styles.css";
 
-import React, { useState } from 'react';
-
-function Input({ name, type, placeholder, label }) {
-  const [showPassword, setShowPassword] = useState(false);
-
-  const toggleShowPassword = () => {
-    setShowPassword(!showPassword);
-  };
-
+function Input({ id, name, placeholder, label, type = "text" }) {
   return (
-    <div className="input-group">
-      {label && <label htmlFor={name}>{label}</label>}
+    <div className="inputcomponent-container">
+      <label htmlFor={id} className="inputcomponent-label">
+        {label}
+      </label>
       <input
-        type={showPassword ? 'text' : type}
+        className="input-component"
         name={name}
+        id={id}
         placeholder={placeholder}
-        required
+        type={type}
       />
-      {type === 'password' && (
-        <span className="eye-icon" onClick={toggleShowPassword}>
-          {showPassword ? '👁️' : '👁️‍🗨️'}
-        </span>
-      )}
     </div>
   );
 }
