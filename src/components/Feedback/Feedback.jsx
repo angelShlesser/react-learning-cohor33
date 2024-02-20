@@ -1,7 +1,6 @@
-// components/Feedback/Feedback.jsx
 import React, { useState } from 'react';
 import Button from '../Button/Button';
-import './style.css'; // Подключаем файл стилей для компонента Feedback
+import './style.css';
 import likeImage from './like.png'
 import dislikeImage from './dislike.png'
 import reset from './reset.png'
