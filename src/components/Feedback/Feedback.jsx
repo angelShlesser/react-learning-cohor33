@@ -10,11 +10,15 @@ function Feedback() {
   const [dislikes, setDislikes] = useState(0);
 
   const handleLike = () => {
-    setLikes(likes + 1);
+    setLikes((prevValue) => {
+        return prevValue + 1;
+      });
   };
 
   const handleDislike = () => {
-    setDislikes(dislikes + 1);
+    setDislikes((prevValue) => {
+        return prevValue + 1;
+      });
   };
 
   const handleReset = () => {
